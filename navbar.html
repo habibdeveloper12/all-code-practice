@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    ul>li {
+      list-style: none;
+      margin-left: 10px;
+      background-color: rgb(238, 234, 243);
+      padding: 10px 20px;
+      color: rgb(0, 0, 0);
+
+    }
+
+    ul>li:hover {
+
+      color: rgb(243, 23, 23);
+      background-color: rgb(83, 73, 73);
+
+
+
+    }
+
+    ul>li>a {
+      text-decoration: none;
+      position: absolute;
+
+    }
+
+    nav>ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .mega {
+      display: none;
+
+    }
+
+    nav>ul>li:hover>ul {
+      display: block;
+      position: absolute;
+      width: 100px;
+      margin: 10px 10px 6px 6px;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="menu"><a href="">my-menu-1
+            <ul class="mega">
+              <li><a href="">hey</a> </li>
+              <li><a href="">hey</a> </li>
+              <li><a href="">hey</a> </li>
+              <li><a href="">hey</a> </li>
+              <li><a href="">hey</a> </li>
+          </a>
+      </ul>
+      </li>
+
+
+      <li><a href="#">my-menu-2</a></li>
+
+      <li><a href="#">my-menu-3</a></li>
+
+      <li><a href="#">my-menu-4</a></li>
+
+      <li><a href="#">my-menu-5</a></li>
+      </ul>
+
+
+
+    </nav>
+
+
+
+
+  </header>
+  <table>
+    <caption>This Brand Ambasudor</caption>
+    <thead>
+      <tr>
+        <th>brabo-1</th>
+        <th>brabo-2</th>
+        <th>brabo-3</th>
+        <th>brabo-4</th>
+
+
+      </tr>
+
+
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">men-1</td>
+        <td>men-2</td>
+        <td>men-3</td>
+        <td>men-4</td>
+
+      </tr>
+      <tr>
+        <td>men-1</td>
+        <td>men-2</td>
+        <td>men-3</td>
+        <td>men-4</td>
+
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+
+
+        <td>Make life sample 2022</td>
+      </tr>
+
+
+
+
+
+    </tfoot>
+
+
+
+  </table>
+
+
+
+
+</body>
+
+</html>

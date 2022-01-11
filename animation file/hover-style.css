@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  }
+  body{
+    background-color: rgb(102, 11, 221);
+    padding: 0 0 500px 0;
+  }
+  .head{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  .section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  .section-right{
+    flex: 1;
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: column;
+    order: 1;
+    flex-grow: 2; */
+    justify-content: center;
+    align-items: center;
+  }
+  .section-left{
+    flex:1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .section-right img{
+    width: 80%;
+    
+  }
+  .section-main{
+    margin-left: 30px;
+  }
+  .section-tittle{
+    color: transparent;
+    font-size: 50px;
+    font-family: Raleway;
+    padding-bottom: 5px;
+    position: relative;
+   
+  }
+  .button-section{
+    padding:10px 30px ;
+    background-color: blueviolet;
+    color:white;
+    border-radius: 5px ;
+    margin-top: 10px;
+    transition: .5s;
+    
+  }
+  .button-section:hover{
+    background-color: crimson;
+    color:darkgray;
+    cursor: pointer;
+  }
+  .section-tittle::before{
+    content: 'Shuvo Hero';
+    position: absolute;
+    color: turquoise;
+    top: 0%;
+    left: 0%;
+    animation: typing 5s linear infinite;
+  }
+  @keyframes typing {
+    0% {
+        content: 'S|';
+    }
+
+    6% {
+        content: 'Sh|';
+    }
+
+    12% {
+        content: 'Shu|';
+    }
+
+    18% {
+        content: 'Shuv|';
+    }
+
+   24% {
+        content: 'Shuvo|';
+    }
+
+    30% {
+        content: 'Shuvo H|';
+    }
+
+    36% {
+        content: 'Shuvo He|';
+    }
+
+    42% {
+        content: 'Shuvo Her|';
+    }
+
+    48% {
+        content: 'Shuvo Hero|';
+    }
+
+    54% {
+        content: 'Shuvo Her|';
+    }
+
+    60% {
+        content: 'Shuvo He|';
+    }
+
+    66% {
+        content: 'Shuvo H|';
+    }
+
+    72% {
+        content: 'Shuvo |';
+    }
+
+    75% {
+        content: 'Shuv|';
+    }
+
+    78% {
+        content: 'Shu|';
+    }
+
+    83% {
+        content: 'Sh|';
+    }
+
+    85%,
+    86% {
+        content: 'S|';
+    }
+
+    90% {
+        content: 'Shuvo Hero|';
+    }
+
+    91% {
+        content: 'Shuvo Her|';
+    }
+
+    92% {
+        content: 'Shuvo He|';
+    }
+
+    93% {
+        content: 'Shuvo H |';
+    }
+
+    94% {
+        content: 'Shuvo|';
+    }
+
+    95% {
+        content: 'Shuv|';
+    }
+
+    96% {
+        content: 'Shu|';
+    }
+    97% {
+      content: 'Sh|';
+  }
+  98% {
+    content: 'S|';
+    }
+   99% {
+     content: '|';
+     }
+   99% {
+     content: '|';
+     }
+
+
+}
+.gallary-image{
+  width: 280px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  
+
+}
+.gallary-image img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.border{
+  background-color: rgb(244, 243, 245);
+  position: absolute;
+  transition: 0.3s ease-in-out;
+ 
+
+}
+.border.top , .border.bottom{
+  width: 267px;
+  height: 4px;
+}
+.border.right,.border.left{
+  width: 4px;
+  height: 267px;
+}
+.border.top{
+  top: 5px;
+  right: 100%;
+}
+.border.bottom{
+  bottom: 5px;
+  left: 100%;
+}
+
+  .border.right{
+    right: 5px;
+    bottom: 100%;
+}
+.border.left{
+  left: 5px;
+  top: 100%;
+}
+.gallary-image:hover .border.top{
+  right: 0%;
+  transform: translateX(-5px);
+  
+}
+.gallary-image:hover .border.bottom{
+  left: 0%;
+  transform: translateX(5px);
+}
+.gallary-image:hover .border.left{
+  top: 0%;
+  transform: translateY(5px);
+}
+.gallary-image:hover .border.right{
+  bottom: 0%;
+  transform: translateY(-5px);
+}
+
+.galary-info{
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  color: blueviolet;
+  transform: translateY(80px);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.5s ease-in-out 0.1s;
+  
+}
+.gallary-image:hover .galary-info{
+  
+  transform: translateY(10px);
+  /* transform: scale(1.3) skew(1.6); */
+}
+.gallary-image::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transition: .3s linear;
+  opacity: 0;
+
+}
+.gallary-image:hover::before{
+  
+  opacity: 1;
+}

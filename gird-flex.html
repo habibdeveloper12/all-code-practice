@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/98075dd507.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gird and flex</title>
+  <style>
+    .section-container {
+      display: flex;
+
+      height: 200px;
+      width: 100%;
+      border: 3px solid springgreen;
+      margin-top: 30px;
+
+    }
+
+    .box {
+      width: 250px;
+      height: 100px;
+      border: 3px solid saddlebrown;
+    }
+
+    #box-1 {
+      flex-grow: 1;
+      order: 2;
+    }
+
+    #box-2 {
+
+      order: 1;
+    }
+
+    nav a {
+
+      text-decoration: none;
+      margin-left: 10px;
+      color: black;
+      font-size: 1.5em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+    .gird-layout {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr)1fr;
+      grid-gap: 10px 30px;
+      margin-top: 50px;
+
+    }
+
+    .gird {
+      border: 5px solid black;
+    }
+
+    .calender {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 2em;
+
+    }
+
+    .date,
+    .bar {
+      background-color: cadetblue;
+      border-radius: 5px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5em;
+    }
+
+    .bar {
+      background-color: cornflowerblue;
+    }
+
+    .lastdate {
+      background-color: chocolate;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <span>
+        <a href="#">home-1</a>
+        <a href="#">home-2</a>
+        <a href="#">home-3</a>
+      </span>
+      <span>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+      </span>
+    </nav>
+  </header>
+  <h1>My name is gird layout</h1>
+  <section class="section-container">
+
+    <div class="box" id="box-1">box-1</div>
+    <div class="box" id="box-2">box-2</div>
+
+
+  </section>
+  <section class="login-container">
+    <h2>Log In</h2>
+    <form class="login-form" action="">
+      <input type="email" name="Email" placeholder="Enter Your Name" id="">
+      <input type="password" name="Password" placeholder="Enter Your Password" id="">
+      <button type="submit">Log In</button>
+    </form>
+  </section>
+  <div class="gird-layout">
+    <div class="gird">1</div>
+    <div class="gird">2</div>
+    <div class="gird">3</div>
+    <div class="gird">4</div>
+    <div class="gird">5</div>
+    <div class="gird">1</div>
+    <div class="gird">2</div>
+    <div class="gird">3</div>
+    <div class="gird">4</div>
+    <div class="gird">5</div>
+    <div class="gird">1</div>
+    <div class="gird">2</div>
+    <div class="gird">3</div>
+    <div class="gird">4</div>
+    <div class="gird">5</div>
+    <div class="gird">1</div>
+    <div class="gird">2</div>
+    <div class="gird">3</div>
+    <div class="gird">4</div>
+    <div class="gird">5</div>
+    <div class="gird">1</div>
+    <div class="gird">2</div>
+    <div class="gird">3</div>
+    <div class="gird">4</div>
+    <div class="gird">5</div>
+    <div class="gird">1</div>
+    <div class="gird">2</div>
+    <div class="gird">3</div>
+    <div class="gird">4</div>
+    <div class="gird">5</div>
+  </div>
+  <div class="calender">
+    <div class="bar">Sunday</div>
+    <div class="bar">Monday</div>
+    <div class="bar">Tuesday</div>
+    <div class="bar">Thursday</div>
+    <div class="bar">Wednesday</div>
+    <div class="bar">Friday</div>
+    <div class="bar">Saturday</div>
+    <div class="date">1</div>
+    <div class="date">2</div>
+    <div class="date">3</div>
+    <div class="date">4</div>
+    <div class="date">5</div>
+    <div class="date">6</div>
+    <div class="date">7</div>
+    <div class="date">8</div>
+    <div class="date">9</div>
+    <div class="date">10</div>
+    <div class="date">11</div>
+    <div class="date">12</div>
+    <div class="date">13</div>
+    <div class="date">14</div>
+    <div class="date">15</div>
+    <div class="date">16</div>
+    <div class="date">17</div>
+    <div class="date">18</div>
+    <div class="date">19</div>
+    <div class="date">20</div>
+    <div class="date">21</div>
+    <div class="date">22</div>
+    <div class="date">23</div>
+    <div class="date">24</div>
+    <div class="date">25</div>
+    <div class="date">26</div>
+    <div class="date">27</div>
+    <div class="date">28</div>
+    <div class="date">29</div>
+    <div class="date">30</div>
+    <div class="date">31</div>
+    <div class="date lastdate">1</div>
+    <div class="date lastdate">2</div>
+    <div class="date lastdate">3</div>
+    <div class="date lastdate">4</div>
+  </div>
+</body>
+
+</html>
